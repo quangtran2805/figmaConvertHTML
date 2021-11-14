@@ -1,0 +1,43 @@
+.footer{
+    padding: 118px 0 113px;
+    background-color: $primary;
+
+    &__main{
+        display: flex;
+        color: white;
+    }
+    &__column{
+        width: 20%;
+    }
+    &__column:first-child{
+        width: 40%;
+    }
+    &__desc{
+        padding: 20px 0 30px;
+        line-height: 28px;
+        font-weight: 300;
+        max-width: 391px;
+    }
+    &__list{
+        margin-top: 12px;
+    }
+    &__link{
+        display: block;
+        padding-top: 20px;
+        color: white;
+    }
+
+    @media screen and (max-width: 767px) {
+        &__main{
+            flex-direction: column;
+        }
+        &__column{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &__column:first-child{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+}
